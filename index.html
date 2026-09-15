@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Tab Autopilot (TabAutopilot) — Smart Tab Manager for Chrome &amp; Firefox</title>
+<meta name="description" content="TabAutopilot — also written Tab Autopilot — is a free smart tab manager for Chrome and Firefox. Auto-group tabs into native tab groups by topic, snooze tabs for later, hibernate inactive tabs to free memory, close duplicates and save sessions as workspaces. 100% on-device." />
+<link rel="canonical" href="https://rocke3.github.io/TabAutopilot/" />
+<meta name="author" content="Mamunur Rashid" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="TabAutopilot" />
+<meta property="og:title" content="Tab Autopilot (TabAutopilot) — Smart Tab Manager for Chrome &amp; Firefox" />
+<meta property="og:description" content="Auto-group tabs by topic, snooze tabs for later, hibernate inactive tabs, close duplicates and restore sessions. Free, on-device, for Chrome and Firefox." />
+<meta property="og:url" content="https://rocke3.github.io/TabAutopilot/" />
+<meta property="og:image" content="https://rocke3.github.io/TabAutopilot/marquee-1400x560.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Tab Autopilot (TabAutopilot) — Smart Tab Manager for Chrome &amp; Firefox" />
+<meta name="twitter:description" content="Auto-group tabs by topic, snooze tabs, hibernate inactive tabs, close duplicates. Free, on-device, Chrome + Firefox." />
+<meta name="twitter:image" content="https://rocke3.github.io/TabAutopilot/marquee-1400x560.png" />
+
+<link rel="icon" href="public/icon.svg" type="image/svg+xml" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://rocke3.github.io/TabAutopilot/#website",
+      "url": "https://rocke3.github.io/TabAutopilot/",
+      "name": "TabAutopilot",
+      "alternateName": ["Tab Autopilot", "Tab-Autopilot"],
+      "inLanguage": "en",
+      "publisher": { "@id": "https://mdrashid.com/#person" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://mdrashid.com/#person",
+      "name": "Mamunur Rashid",
+      "url": "https://mdrashid.com/",
+      "sameAs": [
+        "https://github.com/rocke3",
+        "https://linkedin.com/in/rfmamun"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://rocke3.github.io/TabAutopilot/#app",
+      "name": "TabAutopilot",
+      "alternateName": ["Tab Autopilot", "TabAutopilot – Smart Tab Manager", "Tab Autopilot tab manager"],
+      "applicationCategory": "BrowserApplication",
+      "applicationSubCategory": "Tab Manager",
+      "operatingSystem": "Chrome 120+, Firefox 140+, Firefox for Android 142+, Edge, Brave, Opera, Vivaldi",
+      "browserRequirements": "Requires Chrome 120+ or Firefox 140+",
+      "softwareVersion": "0.8.6",
+      "description": "Smart tab manager for Chrome and Firefox: auto-group tabs into native tab groups by topic, snooze tabs for later, hibernate inactive tabs to free memory, close duplicate tabs and save sessions as workspaces. Everything runs on-device.",
+      "url": "https://rocke3.github.io/TabAutopilot/",
+      "downloadUrl": [
+        "https://chromewebstore.google.com/detail/nplekjmldglpfcdiechmgahoefhfheom",
+        "https://addons.mozilla.org/en-US/firefox/addon/tabautopilot/"
+      ],
+      "installUrl": "https://chromewebstore.google.com/detail/nplekjmldglpfcdiechmgahoefhfheom",
+      "screenshot": [
+        "https://rocke3.github.io/TabAutopilot/public/Screenshot1.png",
+        "https://rocke3.github.io/TabAutopilot/public/Screenshot2.png",
+        "https://rocke3.github.io/TabAutopilot/public/Screenshot3.png"
+      ],
+      "image": "https://rocke3.github.io/TabAutopilot/marquee-1400x560.png",
+      "author": { "@id": "https://mdrashid.com/#person" },
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "8",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "featureList": [
+        "Auto-group tabs by topic into native tab groups",
+        "Tab snooze — reopen tabs automatically later",
+        "Tab hibernation / tab suspender to free memory",
+        "Close duplicate tabs in one click",
+        "Workspaces, session manager and crash recovery",
+        "Editable domain rules and custom categories",
+        "On-device usage statistics",
+        "Clear site cache, cookies and history"
+      ],
+      "sameAs": [
+        "https://chromewebstore.google.com/detail/nplekjmldglpfcdiechmgahoefhfheom",
+        "https://addons.mozilla.org/en-US/firefox/addon/tabautopilot/",
+        "https://github.com/rocke3/TabAutopilot"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://rocke3.github.io/TabAutopilot/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Tab Autopilot the same as TabAutopilot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The extension is published as TabAutopilot and is commonly written Tab Autopilot as two words. Both refer to the same free tab manager for Chrome and Firefox."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I automatically group tabs in Chrome?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Install TabAutopilot from the Chrome Web Store and press Alt+G, or click Smart Group in the side panel. All open tabs are organized into named, colored Chrome tab groups by topic. Enable auto-grouping and every new tab is sorted as you browse."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a Firefox version of TabAutopilot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. TabAutopilot for Firefox is a separate native build on addons.mozilla.org requiring Firefox 140 or newer, or Firefox for Android 142 or newer. It uses Firefox's own tabGroups and sidebar_action APIs rather than a compatibility shim."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between the Chrome and Firefox versions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only two things. The optional AI group-naming layer needs Chrome's built-in Gemini Nano, so it is Chrome-only, and per-site cache clearing is unavailable on Firefox because the browsingData API has no hostname filter for the HTTP cache. Grouping, snooze, hibernation, duplicate closing, workspaces and usage stats are identical."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does TabAutopilot send my browsing data anywhere?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Categorization runs entirely on your device. The Chrome build's optional AI uses Chrome's built-in Gemini Nano, which is part of the browser, not an external service. The Firefox build makes no network requests at all. There is no account, no analytics and no tracking in either build."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is TabAutopilot free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every feature is included, workspaces are unlimited, and there is no premium tier and no account on either browser."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #f7f8fb;
+    --surface: #ffffff;
+    --border: #e3e6ee;
+    --text: #12141c;
+    --muted: #5b6070;
+    --accent: #6366f1;
+    --chrome: #4285f4;
+    --firefox: #ff7139;
+    --ok: #16a34a;
+    --warn: #d97706;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0c0e14;
+      --surface: #14171f;
+      --border: #242835;
+      --text: #eceef4;
+      --muted: #9aa1b2;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+  header { text-align: center; padding-block: 64px 40px; }
+  header img.logo { width: 96px; height: 96px; }
+  h1 { font-size: clamp(2rem, 6vw, 3rem); margin: 18px 0 6px; letter-spacing: -0.02em; }
+  .tagline { font-size: clamp(1.05rem, 2.6vw, 1.3rem); color: var(--muted); margin: 0 0 6px; }
+  .alt { font-size: 0.9rem; color: var(--muted); margin-top: 14px; }
+  .cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 28px 0 8px; }
+  .btn {
+    display: inline-block; padding: 13px 22px; border-radius: 10px;
+    color: #fff; text-decoration: none; font-weight: 600; font-size: 0.97rem;
+  }
+  .btn.chrome { background: var(--chrome); }
+  .btn.firefox { background: var(--firefox); }
+  .btn.ghost { background: transparent; color: var(--text); border: 1px solid var(--border); }
+  .hero { width: 100%; border-radius: 14px; border: 1px solid var(--border); margin-top: 28px; }
+  h2 { font-size: 1.55rem; margin: 52px 0 14px; letter-spacing: -0.01em; }
+  h3 { font-size: 1.1rem; margin: 30px 0 8px; }
+  p { color: var(--text); }
+  .lead { color: var(--muted); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 18px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+  .card h3 { margin: 0 0 6px; font-size: 1rem; }
+  .card p { margin: 0; color: var(--muted); font-size: 0.93rem; }
+  .tablewrap { overflow-x: auto; margin-top: 16px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.93rem; }
+  th, td { text-align: left; padding: 11px 12px; border-bottom: 1px solid var(--border); }
+  th { font-weight: 600; }
+  tbody tr:last-child td { border-bottom: none; }
+  .yes { color: var(--ok); font-weight: 600; }
+  .no { color: var(--muted); }
+  .part { color: var(--warn); font-weight: 600; }
+  details { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; margin-top: 10px; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { margin: 10px 0 0; color: var(--muted); }
+  figure { margin: 22px 0; }
+  figure img { width: 100%; border-radius: 12px; border: 1px solid var(--border); }
+  figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 8px; text-align: center; }
+  footer { border-top: 1px solid var(--border); margin-top: 64px; padding-block: 28px 56px; color: var(--muted); font-size: 0.9rem; text-align: center; }
+  footer a { color: var(--muted); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header>
+  <img class="logo" src="public/icon.svg" alt="TabAutopilot logo" />
+  <h1>TabAutopilot</h1>
+  <p class="tagline">Smart tab manager, tab groups &amp; tab snooze — for Chrome and Firefox</p>
+  <p class="lead">
+    The tab manager that organizes itself. Auto-groups your tabs by topic, snoozes tabs for later,
+    hibernates inactive tabs to free memory, closes duplicates, and restores whole sessions.
+    Everything runs on your device.
+  </p>
+
+  <div class="cta">
+    <a class="btn chrome" href="https://chromewebstore.google.com/detail/nplekjmldglpfcdiechmgahoefhfheom">Add to Chrome — free</a>
+    <a class="btn firefox" href="https://addons.mozilla.org/en-US/firefox/addon/tabautopilot/">Add to Firefox — free</a>
+    <a class="btn ghost" href="https://github.com/rocke3/TabAutopilot">GitHub</a>
+  </div>
+
+  <p class="alt">TabAutopilot is also written <strong>Tab Autopilot</strong>. Free, no account, every feature included.</p>
+
+  <img class="hero" src="public/launch-hero.gif" alt="Tab Autopilot auto-grouping browser tabs by topic into named tab groups" />
+</header>
+
+<h2>What Tab Autopilot does</h2>
+<div class="grid">
+  <div class="card">
+    <h3>Auto-group tabs by topic</h3>
+    <p>Reads page titles, not just domains, and sorts tabs into real Chrome and Firefox tab groups with meaningful names.</p>
+  </div>
+  <div class="card">
+    <h3>Snooze tabs for later</h3>
+    <p>Close a tab now and it reopens on schedule — in an hour, next Monday, or any time you pick. Whole groups too.</p>
+  </div>
+  <div class="card">
+    <h3>Hibernate inactive tabs</h3>
+    <p>A modern Manifest V3 tab suspender. Frees up to 95% of a tab's memory while keeping it in the tab bar.</p>
+  </div>
+  <div class="card">
+    <h3>Close duplicate tabs</h3>
+    <p>Counts duplicates on the toolbar badge and clears them in one click, matching past tracking parameters.</p>
+  </div>
+  <div class="card">
+    <h3>Workspaces &amp; crash recovery</h3>
+    <p>Save and restore whole sessions with group names, colors and collapsed state. Unlimited, free, no account.</p>
+  </div>
+  <div class="card">
+    <h3>It learns from you</h3>
+    <p>Move a tab to a different group once and the rule sticks — for that domain, forever. Opt-in, off by default.</p>
+  </div>
+</div>
+
+<h2 id="chrome-vs-firefox">Chrome or Firefox — what's different?</h2>
+<p class="lead">
+  Tab Autopilot ships as two native builds, not one cross-compiled compromise. Each uses its
+  browser's real APIs, so grouped tabs are genuine Chrome tab groups and genuine Firefox tab groups.
+</p>
+<div class="tablewrap">
+<table>
+  <thead>
+    <tr><th>&nbsp;</th><th>Chrome build</th><th>Firefox build</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Store</td><td><a href="https://chromewebstore.google.com/detail/nplekjmldglpfcdiechmgahoefhfheom">Chrome Web Store</a></td><td><a href="https://addons.mozilla.org/en-US/firefox/addon/tabautopilot/">addons.mozilla.org</a></td></tr>
+    <tr><td>Minimum version</td><td>Chrome 120</td><td>Firefox 140 · Android 142</td></tr>
+    <tr><td>Native tab groups</td><td class="yes">Yes</td><td class="yes">Yes (Firefox 139+)</td></tr>
+    <tr><td>UI surface</td><td>Side panel</td><td>Sidebar</td></tr>
+    <tr><td>Topic grouping engine</td><td class="yes">350+ rules</td><td class="yes">350+ rules</td></tr>
+    <tr><td>On-device AI group naming</td><td class="yes">Gemini Nano (Chrome 127+)</td><td class="no">Rules only</td></tr>
+    <tr><td>Network requests</td><td>None</td><td>None at all</td></tr>
+    <tr><td>Snooze · hibernate · duplicates · workspaces</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+    <tr><td>Per-site cache clearing</td><td class="yes">Yes</td><td class="part">Global only</td></tr>
+    <tr><td>Mobile</td><td class="no">No</td><td class="yes">Firefox for Android 142+</td></tr>
+  </tbody>
+</table>
+</div>
+<p class="lead">
+  Also runs on Edge, Brave, Opera, Vivaldi and Arc via the Chrome build — those use the rule
+  engine, since Gemini Nano is part of Chrome itself. Safari is not supported.
+</p>
+
+<h2>Inside the extension</h2>
+<figure>
+  <img src="public/Screenshot1.png" alt="Tab Autopilot smart grouping — tabs auto-grouped by topic into named, colored tab groups" />
+  <figcaption>Smart Group organizes every open tab into named, colored tab groups in one click.</figcaption>
+</figure>
+<figure>
+  <img src="public/Screenshot3.png" alt="Tab Autopilot domain rules editor with categories, filtering and source badges" />
+  <figcaption>350+ editable domain rules, custom categories, and badges showing where each rule came from.</figcaption>
+</figure>
+<figure>
+  <img src="public/Screenshot2.png" alt="Tab Autopilot settings — grouping mode, hibernation timeout, theme and privacy toggles" />
+  <figcaption>Grouping mode, hibernation timeout, duplicate handling, theme, and import/export.</figcaption>
+</figure>
+
+<h2>Privacy</h2>
+<p>
+  No account. No server. No analytics. No ads. Categorization is a local rule engine running
+  inside your browser; the Chrome build's optional AI is Chrome's own on-device Gemini Nano, and
+  the Firefox build makes no network requests at all and is declared to Mozilla as collecting
+  no data. Everything you save stays on your machine and is deleted when you uninstall.
+  Read the full <a href="privacy-policy.md">privacy policy</a>.
+</p>
+
+<h2>How it compares</h2>
+<div class="tablewrap">
+<table>
+  <thead>
+    <tr><th>&nbsp;</th><th>TabAutopilot</th><th>OneTab</th><th>Workona</th><th>Toby</th><th>Session Buddy</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Auto-group tabs by topic</td><td class="yes">Yes</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="no">No</td></tr>
+    <tr><td>Native browser tab groups</td><td class="yes">Yes</td><td class="no">Flat list</td><td class="no">Own UI</td><td class="no">Own UI</td><td class="no">No</td></tr>
+    <tr><td>Tab snooze</td><td class="yes">Yes</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="no">No</td></tr>
+    <tr><td>Tab suspender / hibernation</td><td class="yes">Yes</td><td class="no">No</td><td class="yes">Yes</td><td class="no">No</td><td class="no">No</td></tr>
+    <tr><td>Duplicate tab closer</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="no">No</td><td class="no">No</td><td class="no">No</td></tr>
+    <tr><td>Works without an account</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td></tr>
+    <tr><td>Free, all features</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td></tr>
+  </tbody>
+</table>
+</div>
+<p class="lead">
+  A <strong>OneTab alternative</strong> that keeps tabs in the tab bar instead of a flat list, a
+  <strong>Workona free alternative</strong> with unlimited workspaces, and a safe Manifest V3
+  <strong>Great Suspender replacement</strong> — on both Chrome and Firefox.
+</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+
+<details>
+  <summary>Is Tab Autopilot the same as TabAutopilot?</summary>
+  <p>Yes. The extension is published as TabAutopilot and is commonly written Tab Autopilot as two words. Both names refer to this same free tab manager for Chrome and Firefox.</p>
+</details>
+<details>
+  <summary>How do I automatically group tabs in Chrome?</summary>
+  <p>Install TabAutopilot from the Chrome Web Store and press <code>Alt+G</code>, or click Smart Group in the side panel. All open tabs are organized into named, colored Chrome tab groups by topic. Turn on auto-grouping and every new tab is sorted as you browse.</p>
+</details>
+<details>
+  <summary>Is there a Firefox version of TabAutopilot?</summary>
+  <p>Yes — a separate native build on addons.mozilla.org, requiring Firefox 140+ or Firefox for Android 142+. It uses Firefox's own <code>tabGroups</code> and <code>sidebar_action</code> APIs rather than a compatibility shim.</p>
+</details>
+<details>
+  <summary>What is the difference between the Chrome and Firefox versions?</summary>
+  <p>Only the optional AI group-naming layer, which needs Chrome's built-in Gemini Nano, and per-site cache clearing, which Firefox's <code>browsingData</code> API cannot filter by hostname. Grouping, snooze, hibernation, duplicate closing, workspaces and usage stats are identical.</p>
+</details>
+<details>
+  <summary>Does TabAutopilot send my browsing data anywhere?</summary>
+  <p>No. Categorization runs entirely on your device. The Chrome build's optional AI is Chrome's built-in Gemini Nano — part of the browser, not an external service. The Firefox build makes no network requests at all. No account, no analytics, no tracking in either build.</p>
+</details>
+<details>
+  <summary>Does it work on Edge, Brave, Opera or Vivaldi?</summary>
+  <p>Yes — the Chrome build runs on any Chromium browser. On Opera, enable Chrome Web Store extensions first. Those browsers use the rule engine, since Gemini Nano is Chrome-only.</p>
+</details>
+<details>
+  <summary>Is TabAutopilot free?</summary>
+  <p>Yes. Every feature, unlimited workspaces, no premium tier and no account — on both browsers.</p>
+</details>
+
+<footer>
+  <p>
+    <a href="https://chromewebstore.google.com/detail/nplekjmldglpfcdiechmgahoefhfheom">Chrome Web Store</a> ·
+    <a href="https://addons.mozilla.org/en-US/firefox/addon/tabautopilot/">Firefox Add-ons</a> ·
+    <a href="https://github.com/rocke3/TabAutopilot">GitHub</a> ·
+    <a href="https://github.com/rocke3/TabAutopilot/issues">Report an issue</a> ·
+    <a href="privacy-policy.md">Privacy</a>
+  </p>
+  <p>Built by <a href="https://mdrashid.com">Mamunur Rashid</a>. TabAutopilot / Tab Autopilot — free smart tab manager for Chrome and Firefox.</p>
+</footer>
+
+</div>
+</body>
+</html>

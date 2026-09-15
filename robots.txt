@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rocke3.github.io/TabAutopilot/sitemap.xml

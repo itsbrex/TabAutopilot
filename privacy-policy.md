@@ -1,36 +1,56 @@
 # Privacy Policy — TabAutopilot
 
-**Last updated:** March 30, 2026
+**Last updated:** September 16, 2026
 
-TabAutopilot is a Chrome extension that organizes your browser tabs. We take your privacy seriously. Here's how we handle your data — in plain English.
+TabAutopilot (also written **Tab Autopilot**) is a browser extension for **Google Chrome**
+and **Mozilla Firefox** that organizes your browser tabs. We take your privacy seriously.
+Here's how we handle your data — in plain English.
+
+This policy covers both builds:
+
+- **TabAutopilot for Chrome** — [Chrome Web Store](https://chromewebstore.google.com/detail/nplekjmldglpfcdiechmgahoefhfheom)
+- **TabAutopilot for Firefox** — [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/tabautopilot/)
 
 ## The Short Version
 
-We don't collect anything. Everything happens on your device. Your browsing data never leaves your browser.
+We don't collect anything. Everything happens on your device. Your browsing data never
+leaves your browser. There is no account, no server, and no analytics in either build.
 
 ## What We Access
 
 TabAutopilot reads your **tab URLs and titles** to:
-- Group tabs by topic
+
+- Group tabs by topic into native tab groups
 - Find and close duplicate tabs
 - Track which tabs are inactive for hibernation
 - Save and restore workspaces
 
 This data is only processed locally inside your browser.
 
-## AI Processing
+## Categorization & AI Processing
 
-TabAutopilot uses Chrome's built-in **Gemini Nano** model for smart tab categorization. This AI runs entirely on your device — it's part of Chrome itself, not an external service. No tab data is sent to Google, OpenAI, or any other AI provider.
+Grouping is driven by a **local rule engine** — a built-in domain table, keyword and title
+matching, your own rules and categories, and what it learns from tabs you move by hand.
+This engine runs entirely in your browser on both Chrome and Firefox.
 
-If your device doesn't support Gemini Nano, we fall back to a simple rule-based system that also runs locally.
+**Chrome build:** optionally uses Chrome's built-in **Gemini Nano** model to polish tab
+group names. This AI runs entirely on your device — it is part of Chrome itself, not an
+external service. No tab data is sent to Google, OpenAI, or any other AI provider. If your
+device doesn't support Gemini Nano, the rule engine handles everything.
+
+**Firefox build:** contains **no AI model at all** and makes **no network requests of any
+kind** — no fetch, no remote scripts, styles, fonts, or images. It is declared to Mozilla
+as `data_collection_permissions: { required: ["none"] }`.
 
 ## What We Store
 
-All data is saved locally in your browser using Chrome's storage and IndexedDB:
+All data is saved locally in your browser using the browser's own extension storage and
+IndexedDB:
 
 - Your settings (theme, hibernation timeout, grouping preferences)
 - Saved workspaces (tab URLs, group names, colors)
 - Tab activity data (when you last used each tab)
+- Usage statistics — registrable domains only (`github.com`), never full URLs or page titles
 - Any category corrections you make
 
 This data stays on your machine. If you uninstall the extension, it's deleted.
@@ -46,29 +66,31 @@ This data stays on your machine. If you uninstall the extension, it's deleted.
 - We **don't** require an account or sign-up
 - We **don't** load any remote code
 
-## Cloud Sync (Pro Feature)
-
-If you use the optional cloud sync feature in the future, your workspace data will be encrypted before leaving your device. We won't be able to read your synced data. This feature will have its own clear consent prompt before activation.
-
 ## Third Parties
 
-We don't share data with anyone. There are no third-party scripts, no analytics services, no ad networks.
+We don't share data with anyone. There are no third-party scripts, no analytics services,
+no ad networks, in either build.
 
 ## Your Control
 
-- You can delete all stored data by uninstalling the extension
-- You can export/import your settings from the Settings page
-- You can disable AI categorization at any time
-- You choose when to save or restore workspaces
+- Turn usage-stats tracking off at any time in Settings, and clear its history from the dashboard
+- Disable AI categorization at any time (Chrome build)
+- Export and import your settings from the Settings page
+- Choose when to save or restore workspaces
+- Delete all stored data by uninstalling the extension
 
-## Open Source
+## Permissions
 
-TabAutopilot is open source. You can review the code yourself to verify everything in this policy:
-[github.com/rocke3/TabAutopilot](https://github.com/rocke3/TabAutopilot)
+Both builds request only what the features need — `tabs` and `tabGroups` to read and
+organize tabs, `storage` for local settings and workspaces, `alarms` for snooze and
+hibernation timers, `contextMenus` for the right-click actions, and `browsingData` for the
+clear-site-data feature. None of these send anything off your device.
 
 ## Changes
 
-If we change this policy, we'll update the date above and note it in the extension's changelog. We won't suddenly start collecting data — that would go against everything this extension stands for.
+If we change this policy, we'll update the date above and note it in the extension's
+changelog. We won't suddenly start collecting data — that would go against everything this
+extension stands for.
 
 ## Contact
 

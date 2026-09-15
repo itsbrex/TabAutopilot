@@ -1,9 +1,10 @@
 {
   "name": "tab-autopilot",
-  "version": "0.5.0",
-  "description": "Smart AI tab manager: auto-groups by topic, snoozes tabs, hibernates inactive ones & removes duplicates. Private, on-device AI.",
+  "version": "0.8.6",
+  "description": "TabAutopilot (Tab Autopilot) — smart tab manager for Chrome and Firefox: auto-group tabs into native tab groups by topic, snooze tabs for later, hibernate inactive tabs to free memory, close duplicate tabs and save sessions as workspaces. 100% on-device.",
   "author": {
     "name": "Mamunur Rashid",
+    "email": "mail@mdrashid.com",
     "url": "https://mdrashid.com/"
   },
   "license": "SEE LICENSE IN LICENSE",
@@ -16,18 +17,27 @@
     "url": "https://github.com/rocke3/TabAutopilot/issues"
   },
   "keywords": [
-    "chrome-extension",
+    "tab-autopilot",
+    "tabautopilot",
     "tab-manager",
     "tab-groups",
-    "ai",
-    "gemini-nano",
-    "productivity",
+    "tab-organizer",
     "tab-snooze",
-    "workspaces",
-    "duplicate-tabs",
+    "tab-suspender",
     "tab-hibernation",
-    "browser-extension"
+    "duplicate-tabs",
+    "session-manager",
+    "workspaces",
+    "chrome-extension",
+    "firefox-addon",
+    "browser-extension",
+    "manifest-v3",
+    "gemini-nano",
+    "on-device-ai",
+    "privacy",
+    "productivity",
+    "onetab-alternative",
+    "great-suspender-alternative"
   ],
-  "type": "module",
-
+  "type": "module"
 }

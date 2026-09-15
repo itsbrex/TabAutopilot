@@ -1,0 +1,26 @@
+Copyright (c) 2026 Mamunur Rashid. All rights reserved.
+
+TabAutopilot (also written "Tab Autopilot") — the browser extension distributed through
+the Chrome Web Store and addons.mozilla.org — is free to download and use, for personal
+and commercial purposes, at no cost.
+
+This repository contains the project's public documentation, store assets and marketing
+material. It is not the extension's source code.
+
+You MAY:
+  - Install and use the extension, free of charge, on any number of devices.
+  - Link to this repository and to the official store listings.
+  - Quote short excerpts of the documentation with attribution.
+
+You MAY NOT, without prior written permission:
+  - Copy, redistribute, sell, sublicense or host the extension or these assets.
+  - Create derivative works from the extension, its name, icon or branding.
+  - Reverse engineer, decompile or repackage the published extension.
+
+THE SOFTWARE AND MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
+OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Contact: mail@mdrashid.com
