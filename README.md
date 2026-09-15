@@ -231,8 +231,8 @@ runs inside your browser.
 
 ## Tab suspender — hibernate inactive tabs, save memory
 
-Each browser tab eats 50–300 MB of RAM. TabAutopilot works as a modern tab suspender for
-Manifest V3 on both Chrome and Firefox — a safe replacement for The Great Suspender.
+Each browser tab eats 50–300 MB of RAM. TabAutopilot works as a modern tab suspender on
+both Chrome and Firefox, built for Manifest V3 and with no tracking of any kind.
 
 - **Auto-hibernate** — inactive tabs suspended after a configurable timeout (15 min–2 hr)
 - **Manual hibernate** — hibernate all inactive tabs with one click
@@ -372,31 +372,6 @@ Right-click any page for quick actions:
 - **Gradient backgrounds** — deep indigo gradient in dark mode, soft blue in light
 - **Ambient glow** — subtle gradient orbs for depth
 - **Smooth transitions** — polished animations across all interactions
-
----
-
-## TabAutopilot vs other tab managers
-
-|                               | TabAutopilot | OneTab       | Workona   | Toby      | Session Buddy |
-| ----------------------------- | ------------ | ------------ | --------- | --------- | ------------- |
-| Chrome **and** Firefox builds | ✅           | ✅           | ✅        | ⚠️ Chrome | ✅            |
-| Auto-group tabs by topic      | ✅           | ❌           | ❌        | ❌        | ❌            |
-| Native browser tab groups     | ✅           | ❌ flat list | ❌ own UI | ❌ own UI | ❌            |
-| Learns from your corrections  | ✅           | ❌           | ❌        | ❌        | ❌            |
-| Tab snooze                    | ✅           | ❌           | ❌        | ❌        | ❌            |
-| Tab suspender / hibernation   | ✅           | ❌           | ✅        | ❌        | ❌            |
-| Duplicate tab closer          | ✅           | ✅           | ❌        | ❌        | ❌            |
-| Session manager / workspaces  | ✅ unlimited | partial      | ⚠️ 5 free | ✅        | ✅            |
-| Crash recovery                | ✅           | ❌           | ✅        | ❌        | ✅            |
-| Works without an account      | ✅           | ✅           | ❌        | ❌        | ✅            |
-| On-device only (no cloud)     | ✅           | ✅           | ❌        | ❌        | ✅            |
-| Free, all features            | ✅           | ✅           | ❌        | ❌        | ✅            |
-
-- **OneTab alternative** — TabAutopilot keeps tabs in the tab bar as native tab groups instead of dumping them into a flat list
-- **Workona free alternative** — unlimited workspaces, no account, no 5-workspace limit
-- **Toby alternative** — grouping is automatic; no manual drag-and-drop, and there's a real Firefox build
-- **The Great Suspender replacement** — safe Manifest V3 tab suspender with no tracking, on both browsers
-- **Session Buddy alternative** — adds snooze, hibernation, duplicate detection, and topic grouping on top of session management
 
 ---
 
