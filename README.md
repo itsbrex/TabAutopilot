@@ -15,7 +15,7 @@ hibernates inactive tabs to free memory, closes duplicates, and restores whole s
 <br/>
 
 [![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-v0.8.5-4285F4?style=flat-square&logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/nplekjmldglpfcdiechmgahoefhfheom)
-[![Firefox Add-ons](https://img.shields.io/badge/Firefox_Add--ons-v0.8.6-ff7139?style=flat-square&logo=firefoxbrowser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/tabautopilot/)
+[![Firefox Add-ons](https://img.shields.io/badge/Firefox_Add--ons-v0.8.7-ff7139?style=flat-square&logo=firefoxbrowser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/tabautopilot/)
 [![Rating](https://img.shields.io/badge/rating-★_5.0%2F5-f59e0b?style=flat-square)](https://chromewebstore.google.com/detail/nplekjmldglpfcdiechmgahoefhfheom)
 [![Manifest](https://img.shields.io/badge/manifest-v3-34a853?style=flat-square)](#browser-compatibility)
 [![Privacy](https://img.shields.io/badge/privacy-100%25_on--device-8b5cf6?style=flat-square)](#privacy)
