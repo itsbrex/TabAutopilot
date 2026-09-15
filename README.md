@@ -48,7 +48,7 @@ hibernates inactive tabs to free memory, closes duplicates, and restores whole s
 | Browser | Store | Requires |
 | ------- | ----- | -------- |
 | **Chrome** · Edge · Brave · Opera · Vivaldi · Arc | **[Add to Chrome — free](https://chromewebstore.google.com/detail/nplekjmldglpfcdiechmgahoefhfheom)** | Chrome 120+ |
-| **Firefox** · Firefox for Android | **[Add to Firefox — free](https://addons.mozilla.org/en-US/firefox/addon/tabautopilot/)** | Firefox 140+ · Android 142+ |
+| **Firefox** | **[Add to Firefox — free](https://addons.mozilla.org/en-US/firefox/addon/tabautopilot/)** | Firefox 140+ |
 
 Both builds are free, have every feature unlocked, and require no account.
 
@@ -63,7 +63,7 @@ Firefox tab groups — not a custom sidebar list pretending to be one.
 | | **Chrome build** | **Firefox build** |
 | --- | --- | --- |
 | Store | [Chrome Web Store](https://chromewebstore.google.com/detail/nplekjmldglpfcdiechmgahoefhfheom) | [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/tabautopilot/) |
-| Minimum version | Chrome 120 | Firefox 140 (Android 142) |
+| Minimum version | Chrome 120 | Firefox 140 |
 | Native tab groups | ✅ `chrome.tabGroups` | ✅ `browser.tabGroups` (Firefox 139+) |
 | UI surface | Side panel | Sidebar (`sidebar_action`) |
 | Topic grouping engine | 350+ rule engine | 350+ rule engine |
@@ -71,7 +71,6 @@ Firefox tab groups — not a custom sidebar list pretending to be one.
 | Network requests | None | **None at all** |
 | Tab snooze · hibernation · duplicates · workspaces · usage stats | ✅ | ✅ |
 | Per-site cache clearing | ✅ | ⚠️ global only ([why](#clear-site-data--cache-cookies--history)) |
-| Mobile | ❌ | ✅ Firefox for Android 142+ |
 
 **The short version:** the two builds behave the same. The only real gap is the optional
 AI group-naming layer, which is Chrome-only because Gemini Nano is part of Chrome
@@ -88,19 +87,18 @@ TabAutopilot is Manifest V3 on both platforms.
 | ------- | ------ | -------- | ------- |
 | **Google Chrome** 120+ | ✅ Fully supported | Rules + Gemini Nano AI | [Chrome Web Store](https://chromewebstore.google.com/detail/nplekjmldglpfcdiechmgahoefhfheom) |
 | **Mozilla Firefox** 140+ | ✅ Fully supported | Rules (no network calls) | [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/tabautopilot/) |
-| **Firefox for Android** 142+ | ✅ Fully supported | Rules | [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/tabautopilot/) |
 | **Microsoft Edge** 120+ | ✅ Fully supported | Rules | Install from the Chrome Web Store |
 | **Brave** | ✅ Fully supported | Rules | Install from the Chrome Web Store |
 | **Opera** | ✅ Fully supported | Rules | Enable Chrome Web Store extensions, then install |
 | **Vivaldi** | ✅ Fully supported | Rules | Install from the Chrome Web Store |
 | **Arc / other Chromium** | ✅ Fully supported | Rules | Install from the Chrome Web Store |
+| **Mobile browsers** | ❌ No | — | Desktop only |
 | **Safari** | ❌ No | — | Different extension platform (WebKit) |
 
 Why the Firefox floor is **140**: `tabGroups` landed in Firefox **139**, and Mozilla's
 `browser_specific_settings.gecko.data_collection_permissions` key — required on every new
 AMO submission — is understood from Firefox **140**. 140 satisfies both and covers both
-current ESR channels. Firefox for Android needs **142**, the first Android release that
-understands the data-collection key.
+current ESR channels. TabAutopilot is a desktop extension on both browsers.
 
 ---
 
@@ -194,8 +192,6 @@ runs inside your browser.
 ---
 
 ## Domain rules — control how tabs are grouped
-
-![Domain rules editor for tab grouping](public/Screenshot3.png)
 
 - **350+ built-in rules** — curated domain-to-category mappings covering Development, Social, Work, Shopping, News, Entertainment, Finance, Education, Research, Reference, Travel, and Health
 - **Editable in-panel** — add, edit, or delete any rule from the Rules tab (side panel on Chrome, sidebar on Firefox)
@@ -418,8 +414,8 @@ directly, so grouped tabs live in your real tab bar.
 
 **Is there a Firefox version of TabAutopilot?**
 Yes. [TabAutopilot for Firefox](https://addons.mozilla.org/en-US/firefox/addon/tabautopilot/)
-is a separate native build requiring Firefox 140+ (or Firefox for Android 142+). It is not
-a port shim — it uses Firefox's own `tabGroups` and `sidebar_action` APIs.
+is a separate native build requiring Firefox 140 or newer on desktop. It is not a port
+shim — it uses Firefox's own `tabGroups` and `sidebar_action` APIs.
 
 **What's the difference between the Chrome and Firefox versions?**
 Only the optional AI group-naming layer, which needs Chrome's built-in Gemini Nano, and
@@ -442,7 +438,7 @@ Yes — the Chrome build runs on any Chromium browser (on Opera, enable Chrome W
 extensions first). Gemini Nano is Chrome-only, so those browsers use the rule engine.
 
 **Does it work on mobile?**
-On Firefox for Android 142+, yes. Chrome for Android doesn't support extensions at all.
+No — TabAutopilot is a desktop extension on both browsers.
 
 **How does the tab suspender differ from Chrome Memory Saver or Firefox tab unloading?**
 Both browsers unload tabs on their own schedule, under memory pressure. TabAutopilot lets

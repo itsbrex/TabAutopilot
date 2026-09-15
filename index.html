@@ -53,7 +53,7 @@
       "alternateName": ["Tab Autopilot", "TabAutopilot – Smart Tab Manager", "Tab Autopilot tab manager"],
       "applicationCategory": "BrowserApplication",
       "applicationSubCategory": "Tab Manager",
-      "operatingSystem": "Chrome 120+, Firefox 140+, Firefox for Android 142+, Edge, Brave, Opera, Vivaldi",
+      "operatingSystem": "Chrome 120+, Firefox 140+, Edge, Brave, Opera, Vivaldi",
       "browserRequirements": "Requires Chrome 120+ or Firefox 140+",
       "softwareVersion": "0.8.6",
       "description": "Smart tab manager for Chrome and Firefox: auto-group tabs into native tab groups by topic, snooze tabs for later, hibernate inactive tabs to free memory, close duplicate tabs and save sessions as workspaces. Everything runs on-device.",
@@ -65,8 +65,7 @@
       "installUrl": "https://chromewebstore.google.com/detail/nplekjmldglpfcdiechmgahoefhfheom",
       "screenshot": [
         "https://rocke3.github.io/TabAutopilot/public/Screenshot1.png",
-        "https://rocke3.github.io/TabAutopilot/public/Screenshot2.png",
-        "https://rocke3.github.io/TabAutopilot/public/Screenshot3.png"
+        "https://rocke3.github.io/TabAutopilot/public/Screenshot2.png"
       ],
       "image": "https://rocke3.github.io/TabAutopilot/marquee-1400x560.png",
       "author": { "@id": "https://mdrashid.com/#person" },
@@ -125,7 +124,7 @@
           "name": "Is there a Firefox version of TabAutopilot?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. TabAutopilot for Firefox is a separate native build on addons.mozilla.org requiring Firefox 140 or newer, or Firefox for Android 142 or newer. It uses Firefox's own tabGroups and sidebar_action APIs rather than a compatibility shim."
+            "text": "Yes. TabAutopilot for Firefox is a separate native build on addons.mozilla.org requiring Firefox 140 or newer on desktop. It uses Firefox's own tabGroups and sidebar_action APIs rather than a compatibility shim."
           }
         },
         {
@@ -295,7 +294,7 @@
   </thead>
   <tbody>
     <tr><td>Store</td><td><a href="https://chromewebstore.google.com/detail/nplekjmldglpfcdiechmgahoefhfheom">Chrome Web Store</a></td><td><a href="https://addons.mozilla.org/en-US/firefox/addon/tabautopilot/">addons.mozilla.org</a></td></tr>
-    <tr><td>Minimum version</td><td>Chrome 120</td><td>Firefox 140 · Android 142</td></tr>
+    <tr><td>Minimum version</td><td>Chrome 120</td><td>Firefox 140</td></tr>
     <tr><td>Native tab groups</td><td class="yes">Yes</td><td class="yes">Yes (Firefox 139+)</td></tr>
     <tr><td>UI surface</td><td>Side panel</td><td>Sidebar</td></tr>
     <tr><td>Topic grouping engine</td><td class="yes">350+ rules</td><td class="yes">350+ rules</td></tr>
@@ -303,7 +302,6 @@
     <tr><td>Network requests</td><td>None</td><td>None at all</td></tr>
     <tr><td>Snooze · hibernate · duplicates · workspaces</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
     <tr><td>Per-site cache clearing</td><td class="yes">Yes</td><td class="part">Global only</td></tr>
-    <tr><td>Mobile</td><td class="no">No</td><td class="yes">Firefox for Android 142+</td></tr>
   </tbody>
 </table>
 </div>
@@ -316,10 +314,6 @@
 <figure>
   <img src="public/Screenshot1.png" alt="Tab Autopilot smart grouping — tabs auto-grouped by topic into named, colored tab groups" />
   <figcaption>Smart Group organizes every open tab into named, colored tab groups in one click.</figcaption>
-</figure>
-<figure>
-  <img src="public/Screenshot3.png" alt="Tab Autopilot domain rules editor with categories, filtering and source badges" />
-  <figcaption>350+ editable domain rules, custom categories, and badges showing where each rule came from.</figcaption>
 </figure>
 <figure>
   <img src="public/Screenshot2.png" alt="Tab Autopilot settings — grouping mode, hibernation timeout, theme and privacy toggles" />
@@ -370,7 +364,7 @@
 </details>
 <details>
   <summary>Is there a Firefox version of TabAutopilot?</summary>
-  <p>Yes — a separate native build on addons.mozilla.org, requiring Firefox 140+ or Firefox for Android 142+. It uses Firefox's own <code>tabGroups</code> and <code>sidebar_action</code> APIs rather than a compatibility shim.</p>
+  <p>Yes — a separate native build on addons.mozilla.org, requiring Firefox 140 or newer on desktop. It uses Firefox's own <code>tabGroups</code> and <code>sidebar_action</code> APIs rather than a compatibility shim.</p>
 </details>
 <details>
   <summary>What is the difference between the Chrome and Firefox versions?</summary>
